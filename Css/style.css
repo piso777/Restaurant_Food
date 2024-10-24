@@ -1,0 +1,523 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+header nav{
+    background-color: #fff;
+}
+
+header nav .container{
+    width: 1140px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .logo,.links{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.container .logo i{
+    color: rgb(110, 193, 27);
+}
+
+.container .logo span{
+    color: rgba(4, 4, 69, 0.805);
+}
+
+.container .links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-inline: 5px;
+}
+
+
+.container .links ul li a{
+    text-decoration: none;
+    color: rgba(4, 4, 69, 0.805);
+
+}
+
+.container .links ul li a:hover{
+    background-color:rgb(110, 193, 27);
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.container .links ul li .home{
+    background-color:rgb(110, 193, 27);
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.container .icons i{
+    margin-left: 20px;
+    color: rgb(32, 31, 31);
+    background-color: #cacaca;
+    border-radius: 80px;
+    padding: 10px 10px;
+}
+
+.container .icons i:hover{
+    background-color:rgb(110, 193, 27);
+    color: #fff;
+    transform: rotate(360deg);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.section1 .container{
+    width: 1140px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .container .plate_information{
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.section1 .container .plate_information h2{
+    margin-bottom: 20px;
+    color: rgb(110, 193, 27);
+    font-size: 18px;
+}
+
+.section1 .container .plate_information h1{
+    margin-bottom: 20px;
+    color: rgba(4, 4, 69, 0.805);
+    font-size: 50px;
+}
+
+.section1 .container .plate_information p{
+    color: dimgray;
+    margin-bottom: 20px;
+}
+
+.section1 .container .plate_information button{
+    background-color:rgba(4, 4, 69, 0.805);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.section1 .container .plate_information button:hover{
+    background-color:rgb(110, 193, 27);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.section2{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.section2 h2,h3{
+    text-align: center;
+}
+
+.section2 h2{
+    color: rgba(4, 4, 69, 0.805);
+    font-weight: 300;
+}
+
+.section2 h3{
+    color: #1d1a1a;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+.lines{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.line1,.line3{
+    margin: 0 auto;
+    width: 100px;
+    height: 3px;
+    background-color:rgb(110, 193, 27);
+    margin-block: 3px;
+}
+
+.line2{
+    margin: 0 auto;
+    width: 200px;
+    height: 3px;
+    background-color:rgb(110, 193, 27);
+}
+
+.section2 .Popular_dishes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section2 .Popular_dishes .dish{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2 .Popular_dishes .dish:hover .dish_icon i{
+    display: inline-block;
+}
+
+.section2 .Popular_dishes .dish:hover .dish_icon .icon1{
+    transition: .3s;
+}
+
+.section2 .Popular_dishes .dish:hover .dish_icon .icon2{
+    transition: .4s;
+}
+
+.section2 .Popular_dishes .dish img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.rate_para{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.rate_para h4{
+    margin-block: 5px;
+    color: rgba(4, 4, 69, 0.805);
+
+}
+
+.stars{
+    color: rgb(110, 193, 27);
+}
+
+.price{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.price span{
+    padding: 5px 0px;
+    color: rgb(110, 193, 27);
+}
+
+.price input{
+    background-color:rgba(4, 4, 69, 0.805);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.price input:hover{
+    background-color:rgb(110, 193, 27);
+}
+
+.dish_icon i{
+    display: none;
+    margin-left: 20px;
+    color: rgb(32, 31, 31);
+    background-color: #cacaca;
+    border-radius: 80px;
+    padding: 10px 10px;
+}
+
+.dish_icon i:hover{
+    background-color:rgb(110, 193, 27);
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon1{
+    position: absolute;
+    top: 0;
+}
+
+.icon2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section3{
+    width: 1140px;
+    margin: 100px auto;
+}
+
+.section3 h2{
+    color: rgba(4, 4, 69, 0.805);
+    text-align: center;
+}
+
+.section3 h3{
+    color: #1d1a1a;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.section3 .best_food img{
+    width: 600px;
+}
+
+.section3 .best_food{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.best_food_info h4{
+    margin-top: 70px;
+    color: rgba(4, 4, 69, 0.805);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.best_food_info p{
+    color: dimgray;
+    margin-bottom: 20px;
+}
+
+.span_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.span_details .span1,.span2,.span3{
+    border: solid rgba(4, 4, 69, 0.805) 1px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.span1 i,.span2 i,.span3 i{
+    color: rgb(110, 193, 27);
+}
+
+.best_food_info button{
+    background-color:rgba(4, 4, 69, 0.805);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.best_food_info button:hover{
+    background-color:rgb(110, 193, 27);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.section4{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.section4 h2{
+    color: rgba(4, 4, 69, 0.805);
+    font-weight: 300;
+    text-align: center;
+}
+
+.section4 h3{
+    color: #1d1a1a;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+.section4 .Popular_menu{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.section4 .Popular_menu img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 10px;
+}
+
+.section4 .Popular_menu .menu{
+    margin-right: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.menu .rate_para{
+    margin-top: 10px;
+}
+
+.menu .rate_para h4{
+    margin-block: 15px;    
+}
+
+.menu .rate_para p{
+    width: 250px;
+    color: dimgray;
+}
+
+.menu .price{
+    width: 250px;
+}
+
+.menu .price span{
+    font-size: 25px;
+}
+
+.menu .i_menu{
+    color: rgb(32, 31, 31);
+    background-color: #cacaca;
+    border-radius: 80px;
+    padding: 10px 10px;
+    top: 10px;
+    right: 10px;
+}
+
+.menu .i_menu:hover{
+    background-color:rgb(110, 193, 27);
+    color: #fff;
+    cursor: pointer;
+}
+
+.section5{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.section5 h2{
+    color: rgba(4, 4, 69, 0.805);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.section5 h3{
+    color: #1d1a1a;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-between;
+    color: dimgray;
+}
+
+.forms label,input{
+    margin-block: 10px;
+}
+
+.forms input{
+    padding-block: 5px;
+    padding-right: 375px;
+    padding-left: 10px;
+}
+
+.forms textarea{
+    margin-top: 10px;
+}
+
+.section5 button{
+    background-color:rgba(4, 4, 69, 0.805);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.section5 button:hover{
+    background-color:rgb(110, 193, 27);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.foot1{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot1 h2{
+    color: rgba(4, 4, 69, 0.805);
+    margin-bottom: 10px;
+}
+
+.foot1 ul li{
+    list-style: none;
+}
+
+.foot1 ul li a{
+    text-decoration: none;
+    color: dimgray;
+    display: inline-block;
+    margin-block: 10px;
+}
+
+.foot1 ul li a:hover{
+    color: rgb(110, 193, 27);
+    text-decoration: underline;
+}
+
+.foot2{
+    padding-block: 30px;
+    padding-inline: 130px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(110, 193, 27);
+}
+
+.foot2 .foot_icons i{
+    color: #fff;
+    padding-right: 10px;
+}
+
+.foot2 span{
+    color: #fff;
+    padding-right: 5px;
+}
+
+.foot2 span a{
+    color: rgba(2, 2, 39, 0.805);
+    text-decoration: none;
+}
+
+.foot2 span a:hover{
+    color: blue;
+}
